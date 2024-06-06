@@ -12,7 +12,7 @@ spring:
           '[/**]':
             allowedOrigins:
               - "http://localhost:3000"
-              - "http://unleashwell.online:3000"
+              - "http://www.unleashwell.online:3000"
             allowedMethods:
               - GET
               - POST
