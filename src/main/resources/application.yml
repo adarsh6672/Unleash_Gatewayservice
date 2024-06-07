@@ -13,6 +13,7 @@ spring:
             allowedOrigins:
               - "http://localhost:3000"
               - "https://unleashwell.online"
+              - "https://www.unleashwell.online"
             allowedMethods:
               - GET
               - POST
