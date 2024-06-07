@@ -13,6 +13,7 @@ spring:
             allowedOrigins:
               - "http://localhost:3000"
               - "http://client-service:3000"
+              - "https://unleashwell.online"
             allowedMethods:
               - GET
               - POST
@@ -26,18 +27,18 @@ spring:
         - id: user-service-public
           uri: lb://USER-SERVICE
           predicates:
-            - Path=/public/**
+            - Path=/api/public/**
 
         - id: user-service-auth
           uri: lb://USER-SERVICE
           predicates:
-            - Path=/auth/**
+            - Path=/api/auth/**
 
 
         - id: user-service-user
           uri: lb://USER-SERVICE
           predicates:
-            - Path=/user/**
+            - Path=/api/user/**
           filters:
             - AuthenticationFilter
 
