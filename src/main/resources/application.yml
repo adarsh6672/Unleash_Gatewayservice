@@ -11,9 +11,7 @@ spring:
         corsConfigurations:
           '[/**]':
             allowedOrigins:
-              - "http://localhost:3000"
-              - "http://www.unleashwell.online"
-              - "http://client-service:3000"
+              - "*"
             allowedMethods:
               - GET
               - POST
