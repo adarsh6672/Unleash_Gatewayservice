@@ -71,7 +71,7 @@ spring:
         - id: websocket_route
           uri: lb:ws://CONSULTATION-SERVICE
           predicates:
-            - Path=/ws/**
+            - Path=/api/ws/**
 
 
   application:
