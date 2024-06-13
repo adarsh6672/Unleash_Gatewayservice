@@ -65,8 +65,6 @@ spring:
           uri: lb://ARTICLE-SERVICE
           predicates:
             - Path=/api/article/**
-          filters:
-            - AuthenticationFilter
 
         - id: websocket_route
           uri: lb:ws://CONSULTATION-SERVICE
